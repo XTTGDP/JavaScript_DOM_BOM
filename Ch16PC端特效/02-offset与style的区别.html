@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box" style="width: 200px;"></div>
+    <script>
+        //offset与style的区别
+        var box = document.querySelector('.box');
+        // 1.offset可以得到任意样式的样式值，而style只能得到行内式的
+        // 2.offset得到的是没单位的数值，style是有单位的字符串
+        // 3.offsetWidth = padding + border + width ,style 的 width =width;
+        console.log(box.offsetWidth);
+        console.log(box.style.width);
+        // 4.offsetWidth是只读属性，style是可读可写
+        // box.offsetWidth = '300px';
+        box.style.width = '300px';
+    </script>
+</body>
+
+</html>

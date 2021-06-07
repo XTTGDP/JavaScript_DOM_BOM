@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 1.求1~100之间所有数的总和与平均值
+        // var sum = 0;
+        // var avg = 0;
+        // for (var i = 1; i <= 100; i++) {
+        //     sum += i;
+        // }
+        // avg = sum / 100;
+        // console.log('1~100之间所有数的总和:' + sum);
+        // console.log('1~100之间所有数的平均值:' + avg);
+
+        // 2.求1~100之间所有偶数的和
+        // var even = 0;
+        // for (var i = 1; i <= 100; i++) {
+        //     if (i % 2 == 0) {
+        //         even += i;
+        //     }
+        // }
+        // console.log(even);
+
+        // 3.求100以内7的倍数的总和
+        // var num = 0;
+        // for (var i = 1; i <= 100; i++) {
+        //     if (i % 7 == 0) {
+        //         num += i;
+        //     }
+        // }
+        // console.log(num);
+
+        // 4.使用for循环打印矩形,要求每次只输出一个★
+        // var str = '';
+        // for (var i = 1; i <= 4; i++) {
+        //     for (var j = 1; j <= 5; j++) {
+        //         str += '★';
+        //     }
+        //     str += '\n';
+        // }
+        // console.log(str);
+
+        // 5.使用for循环打印三角形
+        // var str = '';
+        // for (var i = 1; i <= 5; i++) {
+        //     for (var j = 1; j <= i; j++) {
+        //         str += '★';
+        //     }
+        //     str += '\n';
+        // }
+        // console.log(str);
+
+        // 6.使用for循环打印99乘法表
+        // var str = '';
+        // for (var i = 1; i <= 9; i++) {
+        //     for (var j = 1; j <= i; j++) {
+        //         str += j + 'X' + i + '=' + (i * j) + '\t';
+        //     }
+        //     str += '\n';
+        // }
+        // console.log(str);
+
+        // 7.接收用户输入的用户名和密码，若用户名为"admin",密码为"123456",则提示用户登陆成功!否则，让用户一直输入
+        // while (true) {
+        //     var username = prompt('请你输入您的用户名:');
+        //     var password = prompt('请你输入您的密码:');
+        //     if (username == 'admin' && password == '123456') {
+        //         alert('登录成功');
+        //         break;
+        //     } else {
+        //         alert('输入有误');
+        //     }
+        // }
+
+        // 8.求整数1~100的累加值，但要求跳过所有个位数为3的数。[用continue实现]
+        // var sum = 0;
+        // for (var i = 1; i <= 100; i++) {
+        //     if ((i % 10) != 3) {
+        //         sum += i;
+        //     }
+        // }
+        // console.log(sum);
+
+        // 9.简易ATM
+        // (1)里面现存有100块钱。
+        // (2)如果存钱，就用输入的钱数加上先存的钱数，之后弹出显示余额提示框
+        // (3)如果取钱，就减去取的钱数，之后弹出显示余额提示框
+        // (4)如果显示余额，就输出余额
+        // (5)如果退出，弹出退出信息提示框
+        var money = 100;
+        while (true) {
+            var num = prompt('请输入您要的操作:\n1.存钱\n2.取钱\n3.显示余额\n4.退出');
+            if (num == 1) {
+                money += parseFloat(prompt('请输入你要存钱的数量'));
+                alert('余额:' + money);
+            } else if (num == 2) {
+                money -= parseFloat(prompt('请输入你要取钱的数量'));
+                alert('余额:' + money);
+            } else if (num == 3) {
+                alert('余额:' + money);
+            } else if (num == 4) {
+                alert('退出成功');
+                break;
+            } else {
+                alert('输入有误')
+            }
+        }
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

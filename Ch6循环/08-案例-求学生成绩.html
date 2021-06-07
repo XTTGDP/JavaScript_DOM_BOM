@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 弹出输入框输入的总班级人数(num)
+        // 依次输入学生的成绩(保存起来score)，此时我们需要用到
+        // for循环，弹出的次数跟班级总人数有关系，条件表达式 i<=num
+        // 进行业务处理： 计算成绩。先求总成绩(sum),之后求平均成绩(average)
+        // 弹出结果
+        var num = prompt('请输入班级人数');
+        var score = 0;
+        var sum = 0;//总分
+        var average = 0;//平均成绩
+        for (var i = 1; i <= num; i++) {
+            score = prompt('学生' + i + '的成绩是');
+            sum = sum + parseFloat(score);
+        }
+        average = sum / num;
+        alert('班级总的成绩是:' + sum);
+        alert('班级的平均分是:' + average);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 创建一个电脑对象，该对象要有颜色、重量、品牌、型号，可以看电影、听音乐、打游戏和敲代码
+        // var computer = {
+        //     color: 'pink',
+        //     weight: '1kg',
+        //     brand: 'XiaoMi',
+        //     type: '游戏本',
+        //     Movies: function () {
+        //         console.log('看电影');
+        //     },
+        //     Music: function () {
+        //         console.log('听音乐');
+        //     },
+        //     Game: function () {
+        //         console.log('打游戏');
+        //     },
+        //     Code: function () {
+        //         console.log('敲代码');
+        //     }
+        // }
+        // console.log(computer.color, computer.weight, computer.brand, computer.type);
+        // computer.Movies();
+        // computer.Music();
+        // computer.Game();
+        // computer.Code();
+
+        // 创建一个按钮对象，该对象中需要包含宽，高，背景颜色和点击行为
+        // var btn = {
+        //     weigh: 100,
+        //     height: 100,
+        //     bgc: 'pink',
+        //     click: function () {
+        //         console.log('点击了');
+        //     }
+        // }
+        // console.log(btn.weigh, btn.height, btn.bgc);
+        // btn.click();
+        // 创建一个车对象，该对象要有重量、颜色、牌子、可以载人、拉货和耕田
+        // var car = {
+        //     weight: '20kg',
+        //     color: 'pink',
+        //     id: 1000,
+        //     manned: function () {
+        //         console.log('载人');
+        //     },
+        //     goods: function () {
+        //         console.log('拉货');
+        //     },
+        //     ploughing: function () {
+        //         console.log('耕田');
+        //     }
+        // }
+        // console.log(car.weight, car.color, car.id);
+        // car.manned();
+        // car.goods();
+        // car.ploughing();
+
+        // 写一个函数，实现反转任意数组
+        // function fn(arr) {
+        //     var newArr = [];
+        //     for (var i = arr.length - 1; i >= 0; i--) {
+        //         newArr[newArr.length] = arr[i];
+        //     }
+        //     return newArr;
+        // }
+        // arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+        // console.log(fn(arr));//[9,8,7,6,5,4,3,2,1]
+
+        // 写一个函数，实现对数字数组的排序
+        // function fn(arr) {
+        //     for (var i = 0; i < arr.length - 1; i++) {
+        //         for (var j = 0; j < arr.length - i - 1; j++) {
+        //             if (arr[j] > arr[j + 1]) {
+        //                 var temp;
+        //                 temp = arr[j];
+        //                 arr[j] = arr[j + 1];
+        //                 arr[j + 1] = temp;
+        //             }
+        //         }
+        //     }
+        //     return arr;
+        // }
+        // arr = [99, 22, 66, 2321, 321, 5];
+        // console.log(fn(arr));
+
+        // 简易计算器
+        // (1) 1、加法运算 2、减法运算 3、乘法运算 4、除法运算 5、退出
+        while (true) {
+            var num = parseFloat(prompt('欢迎使用简易计算器:\n1.加法运算;\n2.减法运算;\n3.乘法运算;\n4.除法运算;\n5.退出;\n请输入您的选项'));
+            if (num == 1) {
+                var num1 = parseFloat(prompt('请输入第一个数'));//第一个数
+                var num2 = parseFloat(prompt('请输入第二个数'));//第二个数
+                alert(num1 + num2);
+            } else if (num == 2) {
+                var num1 = parseFloat(prompt('请输入第一个数'));//第一个数
+                var num2 = parseFloat(prompt('请输入第二个数'));//第二个数
+                alert(num1 - num2);
+            } else if (num == 3) {
+                var num1 = parseFloat(prompt('请输入第一个数'));//第一个数
+                var num2 = parseFloat(prompt('请输入第二个数'));//第二个数
+                alert(num1 * num2);
+            } else if (num == 4) {
+                var num1 = parseFloat(prompt('请输入第一个数'));//第一个数
+                var num2 = parseFloat(prompt('请输入第二个数'));//第二个数
+                alert(num1 / num2);
+            } else if (num == 5) {
+                alert('退出成功')
+                break;
+            } else {
+                alert('输入有误');
+            }
+        }
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

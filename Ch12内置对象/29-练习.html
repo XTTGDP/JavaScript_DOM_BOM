@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 给定一个字符串,如:"abaasdffggghhjjkkgfddsssss3444343"，问题如下:
+        var str = "abaasdffggghhjjkkgfddsssss3444343";
+        // 1.字符串的长度
+        // console.log(str.length);
+        // 2.取出指定位置的字符,如:0,3,5,9
+        // console.log(str[0]);
+        // console.log(str.charAt(3));
+        // console.log(str[5]);
+        // console.log(str.charAt(9));
+        // 3.查找指定字符是否有以上字符存在 i,c,b
+        // console.log(str.indexOf('i'));
+        // console.log(str.indexOf('c'));
+        // console.log(str.indexOf('b'));
+        // 4.替换指定字符，如: g 替换 为22，ss替换为b等操作
+        // console.log(str.replace('g', '22'));
+        // console.log(str.replace('ss', 'b'));
+        // 5.截取指定开始位置到结束位置的字符串，取得1-5的字符串
+        // console.log(str.slice(1, 6));
+        // 6.找出以上字符串出现次数最多的字符和出现的次数
+        var o = {};
+        for (var i = 0; i < str.length; i++) {
+            var charts = str.charAt[i];
+            if (o[charts]) {
+                o[charts]++;
+            } else {
+                o[charts] = 1;
+            }
+        }
+        var max = 0;
+        var ch = '';
+        for (var k in o) {
+            if (o[k] > max) {
+                max = o[k];
+                ch = k;
+            }
+        }
+        console.log(max);
+        console.log('最多的字符是' + ch);
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
